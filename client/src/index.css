@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #053B50;
+  height: 100vh;
+  width: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper{
+  margin-top: 00px;
+  width: 70%;
+  background-color: #176B87;
+  border-radius: 10px;
+  box-shadow:
+  inset 0 -3em 3em rgba(0, 200, 0, 0.3),
+  0 0 0 2px white,
+  0.3em 0.3em 1em rgba(247, 0, 0, 0.6);
+}
+
+form{
+  margin: 30px;
+}
+
+h1{
+  color: #64CCC5;
+  font-size: 35px;
+  text-shadow: 5px 5px 6px #000;
+}
+
+form input{
+  width: 50%;
+  height: 35px;
+  vertical-align: middle
+}
+
+form button{
+  height: 41px;
+  width: 120px;
+  background-color: #053B50;
+  color: #EEEEEE;
+  font-size: 17px;
+  cursor: pointer;
+  border: none;
+  vertical-align: middle
+}
+
+.links{
+  margin: 20px auto;
+  background-color: #EEEEEE;
+  width: 80%;
+  height: 35px;
+  border-radius: 5px;
+}
+
+header{
+  width: 100%;
+  height: 60px;
+  background-color: #EEEEEE;
+  position: fixed;
+  top: 0;
+}
+
+
+
+ul li{
+  display: inline-block;
+  margin: 0 20px;
+}
+
+a{
+  font-weight: 400;
+  text-decoration: none;
+  color: #000000;
+  transition: 200ms;
+}
+
+a:hover{
+  color: #176B87;
+}
