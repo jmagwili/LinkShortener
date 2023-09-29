@@ -7,7 +7,7 @@ export const LinkTable = ({links}) => {
     }
 
     let longLink = links.longLink
-    const maxLength = 20
+    const maxLength = 50
 
     if(longLink.length > maxLength){
         longLink = (`${longLink.substring(0,maxLength)}...`)
@@ -15,8 +15,11 @@ export const LinkTable = ({links}) => {
 
     return(
         <div className="links">
-            <a href={links.shortLink}>{longLink}{links.shortLink}</a>
-            <button onClick={()=>copyLink(links.shortLink)}>Copy</button>
+            <span>{longLink}</span>
+            <div>
+                <a href={links.shortLink}>{links.shortLink}</a>
+                <button onClick={()=>copyLink(links.shortLink)}>Copy</button>
+            </div>
         </div>
     )
 }
