@@ -30,7 +30,7 @@ export const Wrapper = () => {
         <LinkForm submitForm={submitForm}/>
         <div>
           {data.map((value,index)=>
-              <LinkTable key={index} shortLink={value.shortLink}/>
+              <LinkTable key={index} links={value}/>
           )}
         </div>
     </div>
