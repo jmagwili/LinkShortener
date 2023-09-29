@@ -112,3 +112,20 @@ a{
 a:hover{
   color: #176B87;
 }
+
+.notif{
+  height: 50px;
+  width: 200px;
+  background-color: #c7f9e2;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.check-icon{
+  display: inline-block;
+  margin-right: 10px;
+  color: #008000;
+  font-size: 20px;
+}
