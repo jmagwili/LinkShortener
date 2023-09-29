@@ -19,7 +19,7 @@ export const LinkTable = ({links}) => {
         <div className="links">
             <span>{longLink}</span>
             <div>
-                <a href={links.shortLink}>{links.shortLink}</a>
+                <a href={links.shortLink} target={"_blank"}>{links.shortLink}</a>
                 <button onClick={()=>copyLink(links.shortLink)}>Copy</button>
             </div>
         </div>
