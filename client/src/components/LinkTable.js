@@ -13,6 +13,8 @@ export const LinkTable = ({links}) => {
         longLink = (`${longLink.substring(0,maxLength)}...`)
     }
 
+    
+
     return(
         <div className="links">
             <span>{longLink}</span>

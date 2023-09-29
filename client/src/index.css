@@ -72,6 +72,20 @@ form button{
   padding: 0 20px;
 }
 
+.links button{
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  color: #176B87;
+  font-weight: 700;
+  font-size: 17px;
+  margin-left: 7px;
+}
+
+.links a{
+  color: #053B50;
+  text-decoration: underline;
+}
 
 header{
   width: 100%;
