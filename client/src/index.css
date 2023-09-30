@@ -87,6 +87,14 @@ form button{
   text-decoration: underline;
 }
 
+.links div span{
+  font-weight: 600;
+}
+
+.links div span:hover{
+  cursor: pointer;
+}
+
 header{
   width: 100%;
   height: 60px;

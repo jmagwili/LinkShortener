@@ -25,12 +25,21 @@ export const Wrapper = ({showNotif}) => {
     .catch((err)=>console.log(err))
   }
 
+  const deleteHandler = (shortLink)=>{
+    setData(data.filter((links)=> shortLink !== links.shortLink))
+  }
+
   return (
     <div className='wrapper'>
         <LinkForm submitForm={submitForm}/>
         <div>
           {data.map((value,index)=>
-              <LinkTable key={index} links={value} showNotif={showNotif}/>
+              <LinkTable 
+                key={index} 
+                links={value} 
+                showNotif={showNotif}
+                deleteHandler={deleteHandler}
+              />
           )}
         </div>
     </div>

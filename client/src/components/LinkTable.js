@@ -1,6 +1,6 @@
 import React from "react";
 
-export const LinkTable = ({links, showNotif}) => {
+export const LinkTable = ({links, showNotif, deleteHandler}) => {
     const copyLink = async (link) =>{
         await navigator.clipboard.writeText(link)
         showNotif()
@@ -19,6 +19,7 @@ export const LinkTable = ({links, showNotif}) => {
             <div>
                 <a href={links.shortLink} target={"_blank"}>{links.shortLink}</a>
                 <button onClick={()=>copyLink(links.shortLink)}>Copy</button>
+                <span onClick={()=>{deleteHandler(links.shortLink)}}>X</span>
             </div>
         </div>
     )
