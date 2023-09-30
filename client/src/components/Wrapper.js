@@ -3,7 +3,7 @@ import axios from 'axios';
 import { LinkForm } from './LinkForm';
 import { LinkTable } from './LinkTable';
 
-export const Wrapper = () => {
+export const Wrapper = ({showNotif}) => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -30,7 +30,7 @@ export const Wrapper = () => {
         <LinkForm submitForm={submitForm}/>
         <div>
           {data.map((value,index)=>
-              <LinkTable key={index} links={value}/>
+              <LinkTable key={index} links={value} showNotif={showNotif}/>
           )}
         </div>
     </div>

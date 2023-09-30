@@ -6,7 +6,7 @@ import React,{useState} from 'react'
 function App() {
   const [notifClass, setNotifClass] = useState("")
 
-  const notifyLinkCopy = () =>{
+  const showNotif = () =>{
     setNotifClass("fade-in")
     setTimeout(() => {
       setNotifClass("")
@@ -16,9 +16,8 @@ function App() {
   return (
     <div className="App" style={{textAlign:'center'}}>
       <Header />
-      <button onClick={notifyLinkCopy}>test</button>
       <h1>URL SHORTENER</h1>
-      <Wrapper />
+      <Wrapper showNotif={showNotif}/>
       <Notification className={notifClass}/>
     </div>
   );

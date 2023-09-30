@@ -1,9 +1,9 @@
 import React from "react";
 
-export const LinkTable = ({links}) => {
-
+export const LinkTable = ({links, showNotif}) => {
     const copyLink = async (link) =>{
         await navigator.clipboard.writeText(link)
+        showNotif()
     }
 
     let longLink = links.longLink
@@ -12,8 +12,6 @@ export const LinkTable = ({links}) => {
     if(longLink.length > maxLength){
         longLink = (`${longLink.substring(0,maxLength)}...`)
     }
-
-    
 
     return(
         <div className="links">
